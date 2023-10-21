@@ -17,6 +17,8 @@
   "homepage": "https://github.com/NameFILIP/broadway-lottery#readme",
   "devDependencies": {
     "@playwright/test": "^1.39.0",
-    "@types/node": "^20.8.7"
+    "@types/node": "^20.8.7",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
   }
 }
