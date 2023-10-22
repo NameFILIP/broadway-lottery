@@ -1,23 +1,15 @@
 # broadway-lottery
 
-1. Add `/e2e/user-info.ts` file:
-
+1. Fork the repository
+2. Go to Settings of the repository and add the necessary secrets ([instructions](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions)). Here is the example, replace with info about yourself:
 ```
-import { UserInfo } from "./types";
-
-export const userInfo: UserInfo = {
-  firstName: "Donald",
-  lastName: "Duck",
-  numberOfTickets: "2",
-  email: "donald.duck@gmail.com",
-  dateOfBirth: {
-    month: "12",
-    day: "12",
-    year: "2001",
-  },
-  zip: "10007",
-  countryOfResidence: "USA",
-};
+FIRST_NAME: Donald
+LAST_NAME: Duck
+NUMBER_OF_TICKETS: 2
+EMAIL: donald.duck@gmail.com
+DOB_MONTH: 12
+DOB_DAY: 12
+DOB_YEAR: 2001
+ZIP: 10007
+COUNTRY: USA
 ```
-
-2. Run `npx playwright test`.
