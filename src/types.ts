@@ -1,3 +1,5 @@
+export type Country = "USA" | "CANADA" | "OTHER";
+
 export type UserInfo = {
   firstName: string;
   lastName: string;
@@ -9,5 +11,5 @@ export type UserInfo = {
     year: string;
   };
   zip: string;
-  countryOfResidence: "USA" | "CANADA" | "OTHER";
+  countryOfResidence: Country;
 };
