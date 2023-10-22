@@ -36,6 +36,10 @@ export async function broadwayDirect({ browser, userInfo, url }) {
 
     // Submit the form
     await page.getByLabel("Enter").click();
+
+    // Wait for a random timeout to avoid spamming the API
+    const breakTime = Math.floor(Math.random() * 1000) + 1;
+    await page.waitForTimeout(breakTime);
   }
 
   await browser.close();
