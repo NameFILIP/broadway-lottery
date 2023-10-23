@@ -7,7 +7,7 @@ The project was created to help sign up for Broadway musicals lottery tickets. C
 ## How to use it
 
 1. Fork the repository
-2. Go to Settings of the repository and add the necessary secrets ([instructions](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions))
+2. Fill in your personal info in the repository secrets ([instructions](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository))
 
 ### Secrets variables
 
@@ -19,7 +19,7 @@ FIRST_NAME: Donald
 LAST_NAME: Duck
 ```
 ```
-NUMBER_OF_TICKETS: 2
+NUMBER_OF_TICKETS: 2 // Allowed values: 1 or 2
 ```
 ```
 EMAIL: donald.duck@gmail.com
@@ -37,5 +37,5 @@ DOB_YEAR: 2001
 ZIP: 10007
 ```
 ```
-COUNTRY: USA
+COUNTRY: USA // Allowed values: USA, CANADA, OTHER
 ```
