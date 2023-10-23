@@ -27,7 +27,7 @@ jobs:
           DOB_YEAR: ${{ secrets.DOB_YEAR }}
           ZIP: ${{ secrets.ZIP }}
           COUNTRY: ${{ secrets.COUNTRY }}
-        run: echo "first name is: $FIRST_NAME (${{ env.FIRST_NAME }})"
+        run: echo "first name is: $FIRST_NAME"
       - name: Run Playwright tests
         env:
           FIRST_NAME: ${{ secrets.FIRST_NAME }}
