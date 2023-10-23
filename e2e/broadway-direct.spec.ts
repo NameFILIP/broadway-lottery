@@ -23,7 +23,6 @@ const urls = [
 
 urls.forEach((url) => {
   test(`Sign up at ${url}`, async () => {
-    throw new Error(`FIRST_NAME: ${process.env.FIRST_NAME}, LAST_NAME: ${process.env.LAST_NAME}, NUMBER_OF_TICKETS: ${process.env.NUMBER_OF_TICKETS}, EMAIL: ${process.env.EMAIL}, DOB_MONTH: ${process.env.DOB_MONTH}, DOB_DAY: ${process.env.DOB_DAY}, DOB_YEAR: ${process.env.DOB_YEAR}, ZIP: ${process.env.ZIP}, COUNTRY: ${process.env.COUNTRY}`);
     const userInfo = getUserInfo(process.env);
     const browser = await chromium.launch({ headless: false });
     await broadwayDirect({ browser, userInfo, url });
