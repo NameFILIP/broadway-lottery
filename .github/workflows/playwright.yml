@@ -27,7 +27,7 @@ jobs:
           DOB_YEAR: ${{ secrets.DOB_YEAR }}
           ZIP: ${{ secrets.ZIP }}
           COUNTRY: ${{ secrets.COUNTRY }}
-        run: echo "first name is: $FIRST_NAME (${{ env.FIRST_NAME }})"
+        run: echo "first name is: $FIRST_NAME (${{ env.FIRST_NAME }})" && npx playwright test
         # run: npx playwright test
       - uses: actions/upload-artifact@v3
         if: always()
