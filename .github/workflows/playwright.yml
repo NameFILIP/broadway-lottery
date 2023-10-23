@@ -16,18 +16,6 @@ jobs:
         run: npm ci
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
-      - name: Echo info
-        env:
-          FIRST_NAME: ${{ secrets.FIRST_NAME }}
-          LAST_NAME: ${{ secrets.LAST_NAME }}
-          NUMBER_OF_TICKETS: ${{ secrets.NUMBER_OF_TICKETS }}
-          EMAIL: ${{ secrets.EMAIL }}
-          DOB_MONTH: ${{ secrets.DOB_MONTH }}
-          DOB_DAY: ${{ secrets.DOB_DAY }}
-          DOB_YEAR: ${{ secrets.DOB_YEAR }}
-          ZIP: ${{ secrets.ZIP }}
-          COUNTRY: ${{ secrets.COUNTRY }}
-        run: echo "first name is: $FIRST_NAME"
       - name: Run Playwright tests
         env:
           FIRST_NAME: ${{ secrets.FIRST_NAME }}
