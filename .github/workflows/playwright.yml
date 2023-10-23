@@ -2,7 +2,7 @@ name: Playwright Tests
 on:
   schedule:
     # Run every day at 4pm UTC
-    - cron: "50 16 * * *"
+    - cron: "25 17 * * *"
 jobs:
   test:
     timeout-minutes: 60
@@ -27,7 +27,7 @@ jobs:
           DOB_YEAR: ${{ secrets.DOB_YEAR }}
           ZIP: ${{ secrets.ZIP }}
           COUNTRY: ${{ secrets.COUNTRY }}
-        run: echo "$FIRST_NAME"
+        run: echo "first name is: $FIRST_NAME (${{ env.FIRST_NAME }})"
         # run: npx playwright test
       - uses: actions/upload-artifact@v3
         if: always()
