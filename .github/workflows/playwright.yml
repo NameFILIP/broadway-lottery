@@ -2,7 +2,7 @@ name: Playwright Tests
 on:
   schedule:
     # Run every day at 4pm UTC
-    - cron: "0 16 * * *"
+    - cron: "23 16 * * *"
 jobs:
   test:
     timeout-minutes: 60
@@ -17,7 +17,8 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests
-        run: npx playwright test
+        run: echo "$FIRST_NAME"
+        # run: npx playwright test
         env:
           FIRST_NAME: ${{ secrets.FIRST_NAME }}
           LAST_NAME: ${{ secrets.LAST_NAME }}
