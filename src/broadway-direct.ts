@@ -4,11 +4,12 @@ export async function broadwayDirect({ browser, userInfo, url }) {
   await page.goto(url);
 
   const links = await page.getByRole("link", { name: /Enter/i }).all();
+  const hrefs = await Promise.all(
+    links.map((link) => link.getAttribute("href"))
+  );
 
-  for (let i = 0; i < links.length; i++) {
-    const link = links[i];
-    const href = await link.getAttribute("href");
-
+  for (let i = 0; i < hrefs.length; i++) {
+    const href = hrefs[i];
     if (!href) {
       continue;
     }
