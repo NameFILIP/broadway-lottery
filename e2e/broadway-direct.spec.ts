@@ -8,7 +8,7 @@ import { broadwayDirect } from "../src/broadway-direct";
 // Note: playwright-extra is compatible with most puppeteer-extra plugins
 const stealth = stealthPlugin();
 
-// Add the plugin to playwright (any number of plugins can be added)
+// Add the plugin to Playwright (any number of plugins can be added)
 chromium.use(stealth);
 
 const urls = [
