@@ -7,7 +7,7 @@ The project was created to help signing up for Broadway musicals' lotteries to g
 ## How to use it
 
 1. "Fork" the repository (button at the top right side)
-2. To create ([repository secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository)) go to **Settings** tab => **Secrets and variables** => **Actions**
+2. To create ([repository secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository)) go to the **Settings** tab => **Secrets and variables** => **Actions**
 3. Click "New repository secret" and add the following secrets with your personal information:
     1. `FIRST_NAME` (example value: `Donald`)
     2. `LAST_NAME` (example value: `Duck`)
@@ -18,6 +18,6 @@ The project was created to help signing up for Broadway musicals' lotteries to g
     7. `DOB_YEAR` - year of birth (example value: `1999`)
     8. `ZIP` - address postal code (example value: `10007`)
     9. `COUNTRY` (allowed values: `USA`, `CANADA`, `OTHER`)
-4. Go to **Actions** tab, accept terms and conditions, and enable "Playwright Tests" workflow
+4. Go to the **Actions** tab, accept the terms and conditions, and enable the "Playwright Tests" workflow
 5. The workflow will run daily at the [specified time](/.github/workflows/playwright.yml#L5) (UTC timezone)
 6. Modify the [list of shows](/e2e/broadway-direct.spec.ts#L14) you want to sign-up for if needed
