@@ -2,7 +2,7 @@
 
 ## Overview
 
-The project was created to help signing up for Broadway musicals' lotteries to get affordable tickets. Currently, it works for lotteries on the [Broadway Direct](https://lottery.broadwaydirect.com/) website. The list of musicals is defined in the [source code](/e2e/broadway-direct.spec.ts#L14). You can edit that list directly on the GitHub website. The results of the lottery drawings are sent out via email (frequently at 3 p.m., but not always). Enjoy the shows and please use this automation responsibly. Reselling these tickets is not allowed.
+The project was created to automate signing up for Broadway musicals' lotteries to get affordable tickets. Currently, it works for lotteries on the [Broadway Direct](https://lottery.broadwaydirect.com/) website. The list of musicals is defined in the [source code](/e2e/broadway-direct.spec.ts#L14). You can edit that list directly on the GitHub website. The results of the lottery drawings are sent out via email (frequently at 3 p.m., but not always). Enjoy the shows and please use this automation responsibly. Reselling these tickets is not allowed.
 
 ## How to use it
 
