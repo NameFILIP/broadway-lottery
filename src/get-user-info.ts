@@ -39,8 +39,15 @@ function validateEmail(env: Env, variableName: "EMAIL") {
   return email;
 }
 
+function removePaddedZero(value: string) {
+  if (value.startsWith("0")) {
+    return value.slice(1);
+  }
+  return value;
+}
+
 function validateDoBMonth(env: Env, variableName: "DOB_MONTH") {
-  const month = requiredString(env, variableName);
+  let month = removePaddedZero(requiredString(env, variableName));
   if (![...Array(12).keys()].map((key) => String(key + 1)).includes(month)) {
     throw new Error(
       `Invalid month: ${month}. Must be a number between 1 and 12.`
@@ -50,7 +57,7 @@ function validateDoBMonth(env: Env, variableName: "DOB_MONTH") {
 }
 
 function validateDoBDay(env: Env, variableName: "DOB_DAY") {
-  const day = requiredString(env, variableName);
+  const day = removePaddedZero(requiredString(env, variableName));
   if (![...Array(31).keys()].map((key) => String(key + 1)).includes(day)) {
     throw new Error(`Invalid day: ${day}. Must be a number between 1 and 31.`);
   }

@@ -25,13 +25,13 @@ NUMBER_OF_TICKETS: 2 // Allowed values: 1 or 2
 EMAIL: donald.duck@gmail.com
 ```
 ```
-DOB_MONTH: 12
+DOB_MONTH: 2
 ```
 ```
-DOB_DAY: 12
+DOB_DAY: 14
 ```
 ```
-DOB_YEAR: 2001
+DOB_YEAR: 1999
 ```
 ```
 ZIP: 10007
