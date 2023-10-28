@@ -21,3 +21,12 @@ The project was created to automate signing up for Broadway musicals' lotteries 
 4. Go to the **Actions** tab, accept the terms and conditions, and enable the "Playwright Tests" workflow
 5. The workflow will run daily at the [specified time](/.github/workflows/playwright.yml#L5) (UTC timezone)
 6. Modify the [list of shows](/e2e/broadway-direct.spec.ts#L14) you want to sign-up for if needed
+
+## Email filters
+
+In order to avoid being a daily loser, I recommend creating email filters to automatically Archive or Delete the following emails:
+
+- from:(lottery@broadwaydirect.com) subject:(Lottery Entry Received)
+- from:(from:lottery@broadwaydirect.com) subject:(Lottery Results: Try Again)
+
+This way you will only receive emails when you win something.
