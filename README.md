@@ -27,6 +27,6 @@ The project was created to automate signing up for Broadway musicals' lotteries 
 In order to avoid being a daily loser, I recommend creating email filters to automatically Archive or Delete the following emails:
 
 - from:(lottery@broadwaydirect.com) subject:(Lottery Entry Received)
-- from:(from:lottery@broadwaydirect.com) subject:(Lottery Results: Try Again)
+- from:(lottery@broadwaydirect.com) subject:(Lottery Results: Try Again)
 
 This way you will only receive emails when you win something.
