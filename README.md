@@ -23,8 +23,13 @@ The project was created to automate signing up for Broadway musicals' lotteries 
 6. Modify the [list of shows](/e2e/broadway-direct.spec.ts#L14) you want to sign-up for if needed
 
 ### Secrets example
-![image](https://github.com/NameFILIP/broadway-lottery/assets/834796/ae673f4a-c2e3-42ca-95c8-e731ca17b2c9) 
-![image](https://github.com/NameFILIP/broadway-lottery/assets/834796/97b1ddd4-85ac-4c34-ae12-46a1c9028215)
+
+#### List of secrets
+<img width="640" alt="image" src="https://github.com/NameFILIP/broadway-lottery/assets/834796/7b3baad6-5fad-42ff-9704-074d6bcaadc2">
+
+#### Create a new secret
+<img width="640" alt="image" src="https://github.com/NameFILIP/broadway-lottery/assets/834796/52daa38a-7fec-4f5d-b918-362b18dcb2bc">
+
 
 ## Email filters
 
