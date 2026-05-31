@@ -4,6 +4,7 @@ export async function broadwayDirect({ browser, userInfo, url }) {
   await page.goto(url);
 
   const links = await page.getByRole("link", { name: /Enter/i }).all();
+  console.log(`Found ${links.length} Enter links at ${url}`);
   const hrefs = await Promise.all(
     links.map((link) => link.getAttribute("href"))
   );
