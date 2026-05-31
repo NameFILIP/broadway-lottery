@@ -2,7 +2,10 @@ name: Playwright Tests
 on:
   schedule:
     # Run every day at 01:26 UTC
-    - cron: "26 1 * * *"
+    # - cron: "26 1 * * *"
+    - cron: "0 13 * * *"   # EST 8am
+    - cron: "0 14 * * *"   # EST 9am
+    - cron: "0 15 * * *"   # EST 10am
   workflow_dispatch: # allow manual runs for debugging
 
 jobs:
@@ -47,7 +50,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-report
+          name: playwright-report-${{ github.run_id }}
           path: playwright-report/
           retention-days: 30
           compression-level: 6
