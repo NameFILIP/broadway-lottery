@@ -33,6 +33,7 @@ export async function broadwayDirect({ browser, userInfo, url }) {
       .selectOption({ label: userInfo.countryOfResidence });
 
     // Agree to terms
+    await page.waitForSelector("#dlslot_agree");
     await page.locator("#dlslot_agree").check({ force: true });
 
     // Submit the form
