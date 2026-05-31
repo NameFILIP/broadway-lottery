@@ -13,13 +13,15 @@ chromium.use(stealth);
 
 const urls = [
   // "https://lottery.broadwaydirect.com/show/lesmis-la/",
-  // "https://lottery.broadwaydirect.com/show/aladdin/",
-  // "https://lottery.broadwaydirect.com/show/mj-ny/",
+   "https://lottery.broadwaydirect.com/show/aladdin/",
+   "https://lottery.broadwaydirect.com/show/mj-ny/",
+  "https://lottery.broadwaydirect.com/show/schmigadoon-ny/",
   // "https://lottery.broadwaydirect.com/show/shucked-ny/",
-  // "https://lottery.broadwaydirect.com/show/six-ny/",
+   "https://lottery.broadwaydirect.com/show/six-ny/",
   // "https://lottery.broadwaydirect.com/show/sweeney-todd-ny/",
-  // "https://lottery.broadwaydirect.com/show/the-lion-king/",
-  // "https://lottery.broadwaydirect.com/show/wicked/",
+   "https://lottery.broadwaydirect.com/show/the-lion-king/",
+   "https://lottery.broadwaydirect.com/show/wicked/",
+  "https://lottery.broadwaydirect.com/show/lost-boys/",
 ];
 
 urls.forEach((url) => {
